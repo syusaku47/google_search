@@ -1,0 +1,45 @@
+body{
+    color: #333333;
+}
+
+.centering_parent {
+    margin :  auto;
+    background-color:  #ffffff;    /* 背景色指定 */
+    height: 100vh;              /* 高さ指定 */
+    width: 80%;               /* 幅指定 */
+    position:relative;
+}
+
+.centering_item {
+    font-size: 1.6rem;
+    text-align: center;
+    background-color: #ffffff;   /* 背景色指定 */
+    position: absolute;
+    margin: auto;
+    top:  0;                     /* 位置指定 */
+    bottom:  0;                  /* 位置指定 */
+    left:  0;                    /* 位置指定 */
+    right:  0;                   /* 位置指定 */
+    height: 200px;                /* 高さ指定 */
+}
+
+h1{
+    font-size: 4.8rem;
+    margin: 0;
+    padding: 0;
+}
+
+.main_title{
+    text-align: center;
+    margin: 0;
+}
+
+.form{
+    margin: 0;
+}
+
+.input-area{
+    width: 30%;               /* 幅指定 */
+    padding: 6px;              /* 余白指定 */
+
+}
