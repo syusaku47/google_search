@@ -1,16 +1,18 @@
 body{
     color: #333333;
+    margin:0;
 }
 
 .inline-from{
     display:inline-flex;
+    /*justify-content: center;*/
 }
 
 .centering_parent {
     margin :  auto;
     background-color:  #ffffff;    /* 背景色指定 */
     height: 100vh;              /* 高さ指定 */
-    width: 80%;               /* 幅指定 */
+    width: 100%;               /* 幅指定 */
     position:relative;
 }
 
@@ -28,7 +30,16 @@ body{
 }
 
 .left_item {
-    margin-top: 60px;
+    padding: 0px 60px;
+    font-size: 14px;
+}
+.menu_item {
+    display: flex;
+    width: 100%;
+    padding: 12px;
+    gap:0px 0.5rem;
+    /*justify-content: center;*/
+    align-items: center;
 }
 
 h1{
@@ -37,6 +48,11 @@ h1{
     padding: 0;
 }
 
+
+
+button{
+    height:24px;
+}
 .main_title{
     text-align: center;
     margin: 0;
@@ -44,10 +60,37 @@ h1{
 
 .form{
     margin: 0;
+    width: 100%;
+    display: flex;
+    gap:0 0.25rem;
 }
 
 .input-area{
-    width: 30%;               /* 幅指定 */
-    padding: 6px;              /* 余白指定 */
+    width: 30%;
+    padding: 6px;
+    height:24px;
+}
+.menu-input-area{
+    width: 30%;
+    min-width: 200px;
+    height:24px;
 
+}
+
+.search_result{
+    font-size:0.5rem;
+    opacity: 0.75;
+}
+
+.top_form{
+    width: 100%;
+}
+
+.button_centering{
+    width: 100%;
+    display: flex;
+    gap :1rem;
+    justify-content: center;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
 }
