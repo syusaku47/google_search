@@ -14,6 +14,8 @@
 </head>
 <body>
 <div class="centering_parent">
+    @if(empty($my_arr))
+
     <div class="centering_item">
         <div class="main_title">
             <h1>Google</h1>
@@ -32,6 +34,23 @@
                 </div>
             </form>
         </div>
+    </div>
+    <div>
+        @else
+            @foreach ($my_arr['items'] as $index => $value)
+            <li>
+                <dl>
+                    <dt>
+                        <a href="{{ $value['link']}}">{{ $value['title']}}</a>
+                    </dt>
+                    <dd><a href="{{ $value['link']}}">{{ $value['link']}}</a></dd>
+                    <dd>{{ $value['htmlSnippet']}}</dd>
+                </dl>
+            </li>
+            $start++;
+            @endforeach
+        @endif
+
     </div>
 </div>
 </body>
