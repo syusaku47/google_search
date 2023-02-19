@@ -10,19 +10,14 @@ class GoogleController extends Controller
     public function index(Request $request)
     {
         //取得スタート位置
-        $start = $request->input('start',null);
-
-        //
-        if($start>91){
-            $start=91;
-        }elseif($start<1){
-            $start =1;
-        }
+        $start = $request->input('start', null);
 
         //検索ワード
-        $search = $request->input('search',null);
-        $total_results=null;
-        $count=null;
+        $search = $request->input('search', null);
+
+        //検索取得総数
+        $total_results = null;
+
         //検索結果変数
         $my_arr = [];
         if (isset($request->search)) {
@@ -60,16 +55,14 @@ class GoogleController extends Controller
 //                ]
 //            ];
             $queries = $my_arr['queries']['request'][0];
-            $total_results=$queries['totalResults'];
-            $count=$queries['count'];
+            $total_results = $queries['totalResults'];
         }
 
         return view('index', [
             'search' => $search, //検索ワード
             'my_arr' => $my_arr, //検索結果
-            'start' => $start,//検索初期値
-            'total_results' => number_format($total_results),//検索取得数
-            'count' => $count,//検索初期値
+            'start' => $start,//取得スタート位置
+            'total_results' => number_format($total_results),//検索取得総数
         ]);
     }
 }

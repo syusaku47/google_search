@@ -30,7 +30,7 @@ class GoogleService{
         $param = http_build_query($param_arr);
         $request_url = $url . $param;
 
-        //【4】リクエストURL→JSON取得→連想配列に
+        //リクエストURL→JSON取得→連想配列に
         $my_json = file_get_contents($request_url, true);
         $my_arr = json_decode($my_json, true);
 
