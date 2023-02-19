@@ -2,6 +2,10 @@ body{
     color: #333333;
 }
 
+.inline-from{
+    display:inline-flex;
+}
+
 .centering_parent {
     margin :  auto;
     background-color:  #ffffff;    /* 背景色指定 */
@@ -21,6 +25,10 @@ body{
     left:  0;                    /* 位置指定 */
     right:  0;                   /* 位置指定 */
     height: 200px;                /* 高さ指定 */
+}
+
+.left_item {
+    margin-top: 60px;
 }
 
 h1{

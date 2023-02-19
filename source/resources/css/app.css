@@ -9,6 +9,8 @@ body{
     font-size: 1.6rem;
 }
 
+
+
 .centering_parent {
     padding: 20px;              /* 余白指定 */
     background-color:  #123456;    /* 背景色指定 */
@@ -30,6 +32,3 @@ body{
     height: 80px;                /* 高さ指定 */
 }
 
-.heyhey{
-    color: #2d3748;
-}
